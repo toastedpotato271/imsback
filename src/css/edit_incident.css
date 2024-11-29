@@ -1,0 +1,134 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #0062E6, #33AEFF);
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Edit Incident Form Container */
+.edit-incident-container {
+    margin-top: 40px;
+    padding: 25px;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.edit-incident-container:hover {
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+}
+
+.edit-incident-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #333;
+}
+
+.edit-incident-container label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.edit-incident-container input,
+.edit-incident-container textarea,
+.edit-incident-container select {
+    font-size: 1rem;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+.edit-incident-container input:focus,
+.edit-incident-container textarea:focus,
+.edit-incident-container select:focus {
+    border-color: #33AEFF;
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+}
+
+.edit-incident-container button {
+    padding: 12px 30px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.edit-incident-container button:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+.edit-incident-container button:active {
+    transform: translateY(1px);
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .edit-incident-container {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .edit-incident-container label {
+        font-size: 1rem;
+    }
+
+    .edit-incident-container input,
+    .edit-incident-container textarea,
+    .edit-incident-container select {
+        font-size: 1rem;
+    }
+
+    .edit-incident-container button {
+        font-size: 1.1rem;
+    }
+}

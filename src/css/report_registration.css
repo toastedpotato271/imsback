@@ -1,0 +1,105 @@
+/* Container for the whole form */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* General heading styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form field styles */
+label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Button styling */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Message text */
+p {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Styles for the registration section */
+.registration-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form label {
+    font-weight: bold;
+}
+
+/* Adjust the width of the registration input fields */
+.registration-form input[type="email"], .registration-form input[type="password"], .registration-form input[type="text"] {
+    width: calc(100% - 20px); /* Full width minus padding */
+}
+
+/* Add spacing between fields */
+.registration-form input, .registration-form button {
+    margin-bottom: 15px;
+}
+
+/* Make sure the registration button has a consistent width with the report button */
+.registration-form button {
+    width: 100%;
+}
+
+/* Responsive Design: Ensure form fields are appropriately spaced on smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .registration-form input[type="text"], .registration-form input[type="email"], .registration-form input[type="password"], .registration-form textarea {
+        padding: 12px;
+    }
+
+    .registration-form button {
+        padding: 12px;
+    }
+}

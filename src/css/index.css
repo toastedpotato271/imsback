@@ -1,0 +1,91 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+/* Title Style */
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Main Section Style */
+main {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Subtitle or Description */
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+/* Button Container */
+.btn-container {
+    margin-top: 30px;
+}
+
+/* Button Style for login, signup, and report incident */
+.auth-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Hover Effect */
+.auth-btn:hover {
+    background-color: #45a049;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Style for 'Report an Incident' */
+.report-btn {
+    background-color: #2196F3;
+}
+
+.report-btn:hover {
+    background-color: #1976D2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    .auth-btn {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+}
